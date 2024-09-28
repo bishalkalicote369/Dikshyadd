@@ -82,3 +82,18 @@ ScrollReveal().reveal(".photos__card", {
   duration: 1000,
   interval: 500,
 });
+function copyEmail() {
+  var emailField = document.getElementById("emailAddress");
+  emailField.select();
+  emailField.setSelectionRange(0, 99999); // For mobile devices
+  document.execCommand("copy");
+
+  // Show success message
+  var copyMessage = document.getElementById("copyMessage");
+  copyMessage.style.display = "block";
+
+  // Hide the message after 2 seconds
+  setTimeout(function() {
+      copyMessage.style.display = "none";
+  }, 2000);
+}

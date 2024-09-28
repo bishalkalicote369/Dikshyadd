@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #81f581;
+  --primaary-color: #a4f50e;
   --primary-color-dark: #f7ebf3;
   --text-dark: #1e293b;
   --text-light: #64748b;
@@ -42,10 +43,13 @@
   outline: none;
   border: none;
   font-size: 1rem;
-  color: var(--white);
+  color: var(--text-dark);
   background-color: var(--primary-color);
   border-radius: 5rem;
   cursor: pointer;
+}
+.btn:hover{
+  border: 1px solid rgb(40, 149, 199);
 }
 
 img {
@@ -99,11 +103,11 @@ nav {
 
 .link a {
   padding: 5px;
-  color: var(--text-light);
+  color: var(--text-dark);
 }
 
 .link a:hover {
-  color: var(--primary-color);
+  color: var(--primaary-color);
 }
 
 header {
@@ -162,7 +166,7 @@ header::before {
 }
 
 .why__image img {
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
 }
 
@@ -184,7 +188,7 @@ header::before {
 .why__content li {
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
-  color: var(--primary-color);
+  color: var( --text-dark);
 }
 
 .hero {
@@ -617,4 +621,60 @@ header::before {
   .posts__grid {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+/*  */
+/* Copy Email Section */
+.footer__copy-email {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f8f9fa;
+  margin-top: 30px;
+}
+
+.footer__copy-email h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.copy-email-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-email-box input[type="text"] {
+  width: 60%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f1f1f1;
+}
+
+.copy-email-box input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.copy-email-box .btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copy-email-box .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Success message styling */
+#copyMessage {
+  margin-top: 10px;
+  font-size: 1rem;
 }
