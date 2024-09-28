@@ -82,33 +82,33 @@
     <section class="hero" id="hero">
       <div class="section__container hero__container">
         <div class="hero__card">
-          <span><img src="assets/icon-1.png" alt="hero" /></span>
-          <h4>Healthy Lifestyle</h4>
-          <p>
+          <span style="align-items: center;"><img src="assets/icon-1.png" alt="hero" /></span>
+          <h4 style="text-align: center;">Healthy Lifestyle</h4>
+          <p style="text-align: center;">
             Embrace a healthy lifestyle through the transformative power of yoga
             and cultivate physical vitality and inner peace.
           </p>
         </div>
         <div class="hero__card">
           <span><img src="assets/icon-2.png" alt="hero" /></span>
-          <h4>Body & Mind Balance</h4>
-          <p>
+          <h4 style="text-align: center;">Body & Mind Balance</h4>
+          <p style="text-align: center;">
             Through purposeful poses and mindful breathing, yoga cultivates a
             strong, flexible body while nurturing inner calm.
           </p>
         </div>
         <div class="hero__card">
           <span><img src="assets/icon-3.png" alt="hero" /></span>
-          <h4>Meditation Practice</h4>
-          <p>
+          <h4 style="text-align: center;">Meditation Practice</h4>
+          <p style="text-align: center;">
             Discover inner serenity and mindfulness as you cultivate a profound
             connection with the present moment.
           </p>
         </div>
         <div class="hero__card">
           <span><img src="assets/icon-4.png" alt="hero" /></span>
-          <h4>Self-Care</h4>
-          <p>
+          <h4 style="text-align: center;">Self-Care</h4>
+          <p style="text-align: center;">
             Discover the transformative power of self-care through yoga and
             embrace moments of tranquility and mindfulness.
           </p>
@@ -164,6 +164,7 @@
         <p class="section__subheader">PRICING TABLE</p>
         <h2 class="section__header">Membership Cards</h2>
         <div class="membership__grid">
+          <!-- YEAR CARD -->
           <div class="membership__card">
             <h4>YEAR CARD</h4>
             <h2><sup>$</sup>400</h2>
@@ -173,8 +174,13 @@
             <p>Group trainer</p>
             <p>Book a group class</p>
             <p>Fitness orientation</p>
-            <button class="btn membership__btn">GET STARTED</button>
+            <button class="btn membership__btn"
+              onclick="location.href='mailto:youremail@example.com?subject=Year Membership Inquiry&body=I am interested in the Year Card membership. Please provide more information.'">
+              GET STARTED
+            </button>
           </div>
+
+          <!-- MONTHLY CARD -->
           <div class="membership__card">
             <h4>MONTHLY CARD</h4>
             <h2><sup>$</sup>40</h2>
@@ -184,8 +190,13 @@
             <p>Discuss fitness goals</p>
             <p>Group trainer</p>
             <p>Fitness orientation</p>
-            <button class="btn membership__btn">GET STARTED</button>
+            <button class="btn membership__btn"
+              onclick="location.href='mailto:youremail@example.com?subject=Monthly Membership Inquiry&body=I am interested in the Monthly Card membership. Please provide more information.'">
+              GET STARTED
+            </button>
           </div>
+
+          <!-- WEEKLY CARD -->
           <div class="membership__card">
             <h4>WEEKLY CARD</h4>
             <h2><sup>$</sup>20</h2>
@@ -195,7 +206,10 @@
             <p>Group trainer</p>
             <p>Group classes</p>
             <p>Fitness orientation</p>
-            <button class="btn membership__btn">GET STARTED</button>
+            <button class="btn membership__btn"
+              onclick="location.href='mailto:youremail@example.com?subject=Weekly Membership Inquiry&body=I am interested in the Weekly Card membership. Please provide more information.'">
+              GET STARTED
+            </button>
           </div>
         </div>
       </div>

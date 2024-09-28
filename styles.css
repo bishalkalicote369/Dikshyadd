@@ -197,8 +197,11 @@ header::before {
   gap: 2rem;
 }
 .hero__card{
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 
 }
 .hero__card span {
