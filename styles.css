@@ -474,9 +474,13 @@ header::before {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
+.photos__card{
+  box-shadow: 0px 80px 50px -30px rgba(0, 0, 0, 0.15);
+ 
+}
 
 .footer {
-  background-color: var(--primary-color);
+  background-color: black;
 }
 
 .footer__container {
@@ -488,12 +492,12 @@ header::before {
 .footer__logo a {
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--text-dark);
+  color: whitesmoke;
 }
 
 .footer__col p {
   font-size: 1.25rem;
-  color: var(--text-dark);
+  color: whitesmoke;
   text-align: center;
 }
 
@@ -511,14 +515,23 @@ header::before {
   width: 50px;
   aspect-ratio: 1;
   font-size: 1.5rem;
-  color: var(--text-dark);
+  color: whitesmoke;
   background-color: #f7ebf330;
   border-radius: 100%;
+}
+.red:hover{
+  color: red;
+}
+.brown:hover{
+  color: rgb(224, 98, 48);
+}
+.pink:hover{
+  color: rgb(181, 58, 192);
 }
 
 .footer__bar {
   font-size: 0.9rem;
-  color: var(--text-dark);
+  color: whitesmoke;
   text-align: center;
 }
 
